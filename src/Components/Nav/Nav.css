@@ -1,0 +1,99 @@
+.header{
+    padding: 30px 0px;
+}
+.header div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header-logo{
+    align-self: auto;
+    max-width: 100%;
+    height: 24px;
+}
+
+.header .header-btns button,.nav-btn{
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-btns button:hover,.nav-btn:hover{
+    background-color: rgb(192, 192, 192);
+    opacity: 0.6;
+    cursor: pointer;
+}
+.drop-menu{
+    position: relative;
+}
+.header .container nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    
+}
+.header .container nav ul a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+.header .container nav a.active,.header .container nav a:hover{
+    color: var(--red-color);
+    border-color: var(--red-color);
+}
+
+.nav-btn{
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    display: none;
+    order: 5;
+
+}
+
+@media (max-width:992px) {
+    .header{
+        position: relative;
+    }
+    .header nav{
+        position: absolute;
+    width: 100%;
+    left: 0px;
+    background: white;
+    top: 100%;
+    transition: 0.3s;
+    transform: translateX(-100%);
+    z-index: 10;
+    }
+    .header nav.active{
+        transform: translateX(0px);
+    }
+
+    .header nav ul{
+        gap:0px !important ;
+        flex-direction: column;
+        display:none;
+    }
+     .header nav ul li{
+        padding: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+     }
+     .nav-btn{
+        display: block;
+     }
+     .header .header-logo{
+        width: 20%;
+        height: auto;
+     }
+    
+}
+

@@ -1,0 +1,97 @@
+.home{
+    height: calc(100vh - 150px );
+    position: relative;
+    overflow: hidden;
+
+}
+.home .background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.3s
+
+}
+.background img:first-child{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.background img:last-child{
+        width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+}
+
+.home h4{
+    color: var(--red-color);
+    font-size: 17px;
+    text-align: left;
+}
+.home> .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+.home .left-slide{
+    left: 10%;
+
+}
+.home button{
+        position: absolute;
+   cursor: pointer;
+    bottom: 60px;
+    font-size: 40px;
+    border: none;
+    color: rgb(88, 85, 85);
+    transition: 0.3s;
+}
+.home button:hover{
+    opacity: 0.6;
+}
+.home .right-slide{
+    right: 10%;
+
+}
+.home >.container .txt{
+    width: 40%;
+    text-align: left;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    
+}
+@media (max-width:768px) {
+
+    .home .container .txt{
+        width: 80%;
+    }
+}
+.home h2{
+    color: #111111;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+
+}
+.home .shop-btn{
+    background-color: black;
+    width: fit-content;
+    padding: 14px 40px;
+    text-decoration: unset;
+    color: white;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+.home .shop-btn:hover{
+    opacity: 0.8;
+    border: 1px solid white;
+}

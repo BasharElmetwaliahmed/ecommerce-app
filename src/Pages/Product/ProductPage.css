@@ -1,0 +1,136 @@
+.product-content.product-img,.product-content.product-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.product-content{
+    display: flex;
+    padding:80px 0px;
+    text-align: start;
+    align-items: center;
+
+}
+.product-content .product-img{
+    width: 50%;
+}
+.product-content .product-img img{
+    width: 70%;
+    height: 80%;
+
+}
+
+.product-content .product-details{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+.product-content .product-details .product-title{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+
+    
+}
+.product-content .product-details h6{
+    color: var(--red-color);
+    font-size: 19px;
+    font-weight: 400;
+}
+.product-content .product-details .product-description{
+    font-size: 19px;
+    line-height: 1.7;
+    
+    
+}
+.product-page{
+    min-height: 60vh;
+}
+.product-content .product-info{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.product-content .product-info .price{
+  background-color: yellow;
+  color: var(--red-color);
+  padding: 4px;
+  font-size: 21px;
+  font-weight: 500;
+}
+.fa-star{
+    color: yellow;
+}
+.product-content .product-info .rate{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+@media (max-width:768px) {
+ .product-content .product-details{
+        width: 100%;
+    }
+    .product-content{
+        flex-wrap: wrap;
+    }
+    .product-content .product-img{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+/* CSS */
+.btn-css {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: 0.3s;
+  vertical-align: middle;
+}
+
+.btn-css:hover,
+.btn-css:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.btn-css:active {
+  opacity: .5;
+}
+
+.product-page .product-content .product-quantity{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+.product-page .product-content .product-quantity{
+    font-size: 21px;
+    color: var(--red-color);
+}
+.fa-bag-shopping{
+    margin-right: 8px;
+}
